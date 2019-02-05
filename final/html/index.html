@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<script src="../js/validation.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<h1>Blood Donor </h1>
+	<p> <strong> A life may depend on a gesture from you, <br> A bottle of Blood</strong></p>
+	<div id="right">
+		<form name="resigistratio_form" action="../php/success.php" method="post" onsubmit="return validation()">
+			<fieldset>
+				<legend>Donor Information</legend>
+				<label>Donor Details: </label>
+				<input type="text" id="fname" name="fname" placeholder="First Name" autofocus autocomplete="off">
+				<input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off">
+				<br>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" placeholder="example@abc.com" autocomplete="off">
+				<br>
+				<label>Gender: </label>
+				<input type="text" name="gender" id="gender" placeholder="Gender" autocomplete="off">
+				<br>
+				<label>Date of Birth:</label>
+				<input type="date" name="bday" id="date">
+				<br>
+				<label>Blood Group:</label>
+				<span id="select_box_BG">
+				<select name="BG">
+					<option value="" disabled="disable">blood group</option>
+					<option value="A+" id="BG">A+</option>
+					<option value="A-" id="BG">A-</option>
+					<option value="B+" id="BG">B+</option>
+					<option value="B-" id="BG">B-</option>
+					<option value="AB+" id="BG">AB+</option>
+					<option value="AB-" id="BG">AB-</option>
+					<option value="O+" id="BG">O+</option>
+					<option value="O-" id="BG">O-</option>
+
+				</select>
+				</span>
+				<br>
+				<label>Phone Number</label>
+				<input type="tel" name="phone" id="phone" placeholder="eg.9800000000" autocomplete="off">
+				<br>
+				<label>Location: </label>
+				<span id="select_box_CT">
+				<select name="CT">
+					<option value="" disabled="disable">cities</option>
+					<option value="Kathmandu">Kathmandu</option>
+					<option value="Bhaktapur">Bhaktapur</option>
+					<option value="Palpa">Palpa</option>
+					<option value="Chitwan">Chitwan</option>
+					<option value="Pokhara">Pokhara</option>
+
+				</select>
+				</span>
+
+				<br>
+				<input type="submit" name="submit" value="Submit"  onsubmit="return validation()">
+				<input type="reset" name="reset" value="Reset">
+			</fieldset>
+		</form>
+	</div>
+	<div id="left">
+		<form name="search-form" action="../php/result.php" method="POST">
+			<fieldset>
+				<LEGEND>Search Form</LEGEND>
+				<label>Blood Group:</label>
+				<span id="select_box_BG">
+				<select name="BG">
+					<option value="A+" >A+</option>
+					<option value="A-">A-</option>
+					<option value="B+">B+</option>
+					<option value="B-">B-</option>
+					<option value="AB+">AB+</option>
+					<option value="AB-">AB-</option>
+					<option value="O+">O+</option>
+					<option value="O-">O-</option>
+				</select>
+				</span>
+				<label>Location: </label>
+				<span id="select_box_CT">
+				<select name="CT">
+					<option value="" disabled="disable">cities</option>
+					<option value="Kathmandu">Kathmandu</option>
+					<option value="Bhaktapur">Bhaktapur</option>
+					<option value="Palpa">Palpa</option>
+					<option value="Chitwan">Chitwan</option>
+					<option value="Pokhara">Pokhara</option>
+				</select>
+				</span>
+				<button type="submit" name="submit">search</button>
+			</fieldset>
+		</form>
+
+	</div>
+</body>
+</html>

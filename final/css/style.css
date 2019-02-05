@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding:0;
+}
+h1{
+	padding:1vh;
+	width: 100%;
+	color: white;
+	text-align:center;
+	background-color:black;
+	font-family: serif;
+	font-size:36px;
+}
+p{
+	font-size: 5vh;
+	color: black;
+	position: fixed;
+	bottom: 25%;
+	left: 5%;
+	text-align: justify;
+}
+legend{
+	font:oblique 4vh Georgia, serif;
+}
+#right{
+	float: right;
+	margin-right: 1%;
+}
+form
+{
+	font:oblique 110%/8vh Georgia, serif;
+	
+}
+label{
+	font-size: 3vh;
+}
+input[type=text], [type=password],[type=tel],[type=emali]
+{
+    width: auto;
+    padding: 1vh ;
+    margin: 1vh;
+    box-sizing: border-box;
+    border: 1px solid #2ee5fb;
+    outline: none;
+    background-color:#79969a2e;
+}
+input[type=text]:focus, [type=password]:focus,[type=tel]:focus,[type=emali]:focus
+{
+    background-color: #9bdee6;
+}
+input
+{
+	 font-family: Verdana, Geneva, sans-serif;
+	  font-size:80%;
+}
+::placeholder
+{
+    color: #000000; 
+}
+
+input[type=submit],[type=reset]
+{
+	background-image: url(../img/submit.png);
+	width:auto;
+	height: auto;
+	background-position: top;
+	display: block; 
+	float: left;
+	margin: 1%;
+}
+#left{
+	margin: 2% 55% 0% 2%;
+}
+a{
+	color: white;
+}
+a:hover{
+	color:#a1a5a1;
+}
